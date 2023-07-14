@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/menu_playlist"-->
+    <!--        android:icon="@drawable/ic_playlist"-->
+    <!--        android:title="Playlist" />-->
+
+
+    <item
+        android:id="@+id/menu_pedometer"
+        android:icon="@drawable/ic_pedometer"
+        android:title="Pedometer" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_person"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/menu_manage"
+        android:icon="@drawable/ic_about_white"
+        android:title="About Us" />
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.imusicplayer.imusic.HomeActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_Navigation_home"
+        android:background="@drawable/black_wallpaper"
+        android:padding="10dp">
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_player"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search songs">
+
+        </SearchView>
+
+
+        <ListView
+
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="58dp"
+            android:layout_marginBottom="132dp"
+            android:choiceMode="singleChoice"
+            android:listSelector="@drawable/btn_background"
+            android:padding="10dp" />
+
+    </FrameLayout>
+
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/colortextfirst"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:visibility="visible"
+        app:next_icon_color="@color/white"
+        app:pause_icon_color="@color/white"
+        app:play_icon_color="@color/white"
+        app:previous_icon_color="@color/white"
+        app:progress_color="@color/white"
+        app:random_icon_color="@color/white"
+        app:repeat_icon_color="@color/white"
+        app:repeat_one_icon_color="@color/white"
+        app:seek_bar_color="#02FFFF"
+        app:text_audio_current_duration_color="@color/white"
+        app:text_audio_duration_color="@color/white"
+        app:text_audio_title_color="@color/white" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_Navigation_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        app:itemIconTint="@color/icons_color"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation_menu" />
+
+
+</RelativeLayout>
